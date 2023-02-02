@@ -1,0 +1,29 @@
+<html>
+    <script>
+
+/*O aluno deverá criar uma função que informará a soma de todos os múltiplos de 3 ou 5 menores
+que determinado número. Essa função deverá ser criada dentro da tag “script” de um arquivo */
+
+
+
+function verificarMultiplos(numero) {
+    let multiplosDe3 = 0;
+    let multiplosDe5 = 0;
+    let soma = 0;
+    for(let i = 0; i < numero; i++) {
+        if (i % 3 === 0) {
+            multiplosDe3 += i;
+            console.log(i);
+        } else if (i % 5 === 0) {
+            multiplosDe5 += i;
+            console.log(i);
+        }
+    }
+    soma = multiplosDe3 + multiplosDe5;
+    console.log(soma);
+}
+ 
+ verificarMultiplos(75) //inserir o número que quer verificar
+
+    </script>
+</html>
